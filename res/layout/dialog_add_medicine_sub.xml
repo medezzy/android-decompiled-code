@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@*android:style/TextAppearance.Large" android:textColor="@color/colorLight" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/textView2" android:background="@color/colorPrimaryDark" android:padding="8sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Substitutes" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerSubMeds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5sp" />
+</LinearLayout>

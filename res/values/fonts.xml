@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <font name="bree_serif">res/font/bree_serif.xml</font>
+    <font name="calibri">res/font/calibri.ttf</font>
+    <font name="sansation_bold">res/font/sansation_bold.ttf</font>
+</resources>

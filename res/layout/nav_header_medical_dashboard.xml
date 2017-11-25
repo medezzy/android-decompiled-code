@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/ThemeOverlay.AppCompat.Dark" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:background="@drawable/side_nav_bar" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f07008a">
+    <ImageView android:id="@id/imageView" android:paddingTop="@dimen/nav_header_vertical_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/medical_store" android:srcCompat="@mipmap/medicals" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/colorLight" android:paddingTop="@dimen/nav_header_vertical_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/medical_store" />
+</LinearLayout>

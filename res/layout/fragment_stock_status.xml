@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5sp" android:layout_above="@id/relativeLayout1">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expiring" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Expired" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5sp" android:weightSum="2.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(Next 15 days)" android:layout_weight="1.0" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="2.0">
+            <android.support.v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2sp" android:layout_weight="1.0">
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/noItems1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_items" />
+                <android.support.v7.widget.RecyclerView android:id="@id/expiringRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2sp" android:layout_weight="1.0">
+                <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/noItems2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_items" />
+                <android.support.v7.widget.RecyclerView android:id="@id/expiredRecyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/relativeLayout1" android:background="@color/bottomBarColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/order" android:layout_toStartOf="@id/buttonPrint" />
+        <Button android:id="@id/buttonPrint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/print" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@id/textViewRx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5sp" android:layout_marginBottom="5sp" android:text="@string/rx" android:layout_marginStart="8sp" />
+    <android.support.design.widget.TextInputLayout android:id="@id/textInputLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/textViewRx" android:hintTextAppearance="@style/editTextStyle">
+        <AutoCompleteTextView android:id="@id/autoTextSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8sp" android:hint="@string/type_medicine_name" android:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvMedicinesList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8sp" android:layout_above="@id/relativeLayout1" android:layout_below="@id/textInputLayout1" />
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@color/bottomBarColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/textViewTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rupees" android:layout_centerVertical="true" android:layout_marginStart="@dimen/activity_horizontal_margin" android:layout_toStartOf="@id/buttonProceed" android:layout_alignParentStart="true" />
+        <Button android:id="@id/buttonProceed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/proceed" android:layout_marginEnd="10sp" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.Button.Colored" />
+    </RelativeLayout>
+</RelativeLayout>

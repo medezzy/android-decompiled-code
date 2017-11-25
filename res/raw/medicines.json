@@ -1,0 +1,73 @@
+[{
+  "_id":"ABIGEL",
+  "meicineType":"brand",
+  "referencedGenericMedicine" :["aluminium hydroxide"],
+  "Manufacturer":"Alpic Biotech",
+  "ATC Classification":{"C01CA06 ":"  phenylephrine ; Belongs to the class of adrenergic and dopaminergic cardiac stimulants excluding glycosides. Used in the treatment of heart failure.",
+    "R01AA04 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic agents used as nasal decongestants.",
+    "R01AB01 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic combination preparations, excluding corticosteroids. Used as nasal decongestants.",
+    "R01BA03 ":  "phenylephrine ; Belongs to the class of systemic sympathomimetic preparations used as nasal decongestants.",
+    "S01FB01 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as mydriatics and cycloplegics.",
+    "S01GA05 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as ophthalmologic decongestants."
+  },
+  "Contents": "ABIGEL oral susp: aluminium hydroxide gel 250 mg, magnesium hydroxide 250 mg, simeticone 25 mg/5 ",
+  "CIMSClass":"Antacids, Antireflux Agents & Antiulcerants",
+  "presentation" : [{
+    "type": "bottol",
+    "quantity" : "170ml",
+    "Price": "49.95"
+  },{
+    "type": "strip",
+    "quantity" : "10",
+    "Price": "55"
+  }]
+},
+{
+  "_id":"ABIGEL",
+  "meicineType":"brand",
+  "referencedGenericMedicine" :["aluminium hydroxide"],
+  "Manufacturer":"Alpic Biotech",
+  "ATC Classification":{"C01CA06 ":"  phenylephrine ; Belongs to the class of adrenergic and dopaminergic cardiac stimulants excluding glycosides. Used in the treatment of heart failure.",
+    "R01AA04 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic agents used as nasal decongestants.",
+    "R01AB01 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic combination preparations, excluding corticosteroids. Used as nasal decongestants.",
+    "R01BA03 ":  "phenylephrine ; Belongs to the class of systemic sympathomimetic preparations used as nasal decongestants.",
+    "S01FB01 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as mydriatics and cycloplegics.",
+    "S01GA05 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as ophthalmologic decongestants."
+  },
+  "Contents": "ABIGEL oral susp: aluminium hydroxide gel 250 mg, magnesium hydroxide 250 mg, simeticone 25 mg/5 ",
+  "CIMSClass":"Antacids, Antireflux Agents & Antiulcerants",
+  "presentation" : [{
+    "type": "bottol",
+    "quantity" : "170ml",
+    "Price": "49.95"
+  },{
+    "type": "strip",
+    "quantity" : "10",
+    "Price": "55"
+  }]
+},
+{
+  "_id":"ABIGEL",
+  "meicineType":"brand",
+  "referencedGenericMedicine" :["aluminium hydroxide"],
+  "Manufacturer":"Alpic Biotech",
+  "ATC Classification":{"C01CA06 ":"  phenylephrine ; Belongs to the class of adrenergic and dopaminergic cardiac stimulants excluding glycosides. Used in the treatment of heart failure.",
+    "R01AA04 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic agents used as nasal decongestants.",
+    "R01AB01 ":  "phenylephrine ; Belongs to the class of topical sympathomimetic combination preparations, excluding corticosteroids. Used as nasal decongestants.",
+    "R01BA03 ":  "phenylephrine ; Belongs to the class of systemic sympathomimetic preparations used as nasal decongestants.",
+    "S01FB01 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as mydriatics and cycloplegics.",
+    "S01GA05 ":  "phenylephrine ; Belongs to the class of sympathomimetics used as ophthalmologic decongestants."
+  },
+  "Contents": "ABIGEL oral susp: aluminium hydroxide gel 250 mg, magnesium hydroxide 250 mg, simeticone 25 mg/5 ",
+  "CIMSClass":"Antacids, Antireflux Agents & Antiulcerants",
+  "presentation" : [{
+    "type": "bottol",
+    "quantity" : "170ml",
+    "Price": "49.95"
+  },{
+    "type": "strip",
+    "quantity" : "10",
+    "Price": "55"
+  }]
+}
+]

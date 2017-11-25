@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: app-debug-01-11-17.apk
+compressionType: false
+doNotCompress:
+- arsc
+- json
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '26'
+sharedLibrary: false
+unknownFiles:
+  publicsuffixes.gz: '0'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@id/buttonHome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home" android:contentDescription="@string/empty" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/buttonDateChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/date" android:contentDescription="@string/empty" android:layout_alignParentEnd="true" />
+    <android.support.v7.widget.CardView android:id="@id/cardView3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8sp" android:layout_above="@id/relativeLayout1" android:layout_below="@id/buttonHome">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/bill_summary" />
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@id/webViewBillSummary" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.constraint.ConstraintLayout android:id="@id/relativeLayout1" android:background="@color/bottomBarColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:id="@id/textViewTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total" android:layout_marginStart="8sp" android:layout_constraintBottom_toBottomOf="0" android:layout_constraintStart_toStartOf="0" android:layout_constraintTop_toTopOf="0" />
+        <ImageView android:id="@id/buttonShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@mipmap/share" android:contentDescription="@string/empty" android:layout_marginStart="8dp" android:layout_marginEnd="2dp" android:layout_constraintBottom_toBottomOf="0" android:layout_constraintEnd_toStartOf="@id/buttonPrint" android:layout_constraintStart_toEndOf="@id/textViewTotal" android:layout_constraintTop_toTopOf="0" />
+        <ImageView android:id="@id/buttonPrint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/printer" android:contentDescription="@string/empty" android:layout_marginStart="2dp" android:layout_marginEnd="2dp" android:layout_constraintBottom_toBottomOf="0" android:layout_constraintEnd_toStartOf="@id/buttonDone" android:layout_constraintStart_toEndOf="@id/buttonShare" android:layout_constraintTop_toTopOf="0" />
+        <ImageView android:id="@id/buttonDone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/done" android:contentDescription="@string/empty" android:layout_marginStart="2dp" android:layout_marginEnd="2dp" android:layout_constraintBottom_toBottomOf="0" android:layout_constraintEnd_toEndOf="0" android:layout_constraintStart_toEndOf="@id/buttonPrint" android:layout_constraintTop_toTopOf="0" />
+    </android.support.constraint.ConstraintLayout>
+    <ProgressBar android:id="@id/progressBar3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="?unknown_attr_ref: 1010077" />
+</RelativeLayout>

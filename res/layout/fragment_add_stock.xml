@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="5sp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@id/progressBar4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageButton android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/buttonClose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x1080038" android:contentDescription="@string/close" />
+        <com.budiyev.android.codescanner.CodeScannerView android:id="@id/scanner_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:autoFocusButtonColor="0x106000b" android:autoFocusButtonVisible="true" android:flashButtonColor="0x106000b" android:flashButtonVisible="true" android:frameColor="0x106000b" android:frameCornersSize="50dp" android:frameWidth="2dp" android:maskColor="#77000000" android:squareFrame="true" />
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <AutoCompleteTextView android:id="@id/editTextTrade" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/trade_name" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editTextGeneric" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/generic_name" android:inputType="UNKNOWN_DATA_0x0" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/editTextQty" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/packedQty" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/editTextType" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/type2" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editTextBatch" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/batch" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageViewDOM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8sp" android:contentDescription="@string/todo" android:layout_alignParentEnd="true" android:srcCompat="0x1080046" />
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/imageViewDOM">
+                    <EditText android:id="@id/editTextDOM" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/dom" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageViewExpiry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8sp" android:contentDescription="@string/todo" android:layout_alignParentEnd="true" android:srcCompat="0x1080046" />
+                <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/imageViewExpiry">
+                    <EditText android:id="@id/editTextExpiry" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/expiry" android:inputType="textUri|textEmailSubject|textLongMessage|textPostalAddress|textVisiblePassword|textFilter|textWebEmailAddress|numberPassword|datetime|date|time" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editTextPurchasedFrom" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/purchased_from" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/editTextBill" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/purchasedBill" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+            <Button android:id="@id/buttonScan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan" android:layout_weight="1.0" android:drawableStart="0x1080037" style="@style/Base.Widget.AppCompat.Button.Colored" />
+            <Button android:id="@id/buttonAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add" android:layout_weight="1.0" android:drawableStart="0x1080033" style="@style/Base.Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

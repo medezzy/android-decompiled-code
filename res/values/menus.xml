@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="activity_medical_dashboard_drawer">res/menu/activity_medical_dashboard_drawer.xml</menu>
+    <menu name="medical_dashboard">res/menu/medical_dashboard.xml</menu>
+</resources>

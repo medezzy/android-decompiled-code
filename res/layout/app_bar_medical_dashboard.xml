@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/buttonSignOut" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/sign_out" android:text="@string/sign_out" android:onClick="onClick" android:contentDescription="@string/empty" android:layout_marginEnd="5sp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_medical_dashboard" />
+</android.support.design.widget.CoordinatorLayout>

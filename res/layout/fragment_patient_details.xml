@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/relativeLayout1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextFullName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/full_name" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextAge" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/age" />
+            </android.support.design.widget.TextInputLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/radioGroupGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5sp" android:layout_marginTop="8sp" android:layout_marginRight="5sp" android:layout_marginStart="5sp" android:layout_marginEnd="5sp">
+                <TextView android:textColor="0x106000c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gender" />
+                <RadioButton android:id="@id/radioButtonMale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/male" />
+                <RadioButton android:id="@id/radioButtonFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/female" />
+                <RadioButton android:id="@id/radioButtonTrasg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transgender" />
+            </RadioGroup>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextMobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/mobile_no" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/email" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/editTextAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/address" android:lines="2" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextDoctor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/doctor_name" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:id="@id/editTextDoctorRegNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/doctor_registration_no" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8sp" android:layout_marginTop="8sp" android:layout_marginRight="8sp" android:hintTextAppearance="@style/editTextStyle">
+                <EditText android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/editTextDocAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hospital_name_address" android:lines="2" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/relativeLayout1" android:background="@color/bottomBarColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/buttonProceed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:text="@string/proceed" android:layout_alignParentEnd="true" style="@style/Base.Widget.AppCompat.Button.Colored" />
+    </RelativeLayout>
+</RelativeLayout>
